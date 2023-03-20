@@ -4,26 +4,29 @@
 
 $(function () {
   // var timeBlocks = $(".time-block");
-  var date = new Date();
+  // var date = new Date();
+  // console.log(date);
+
+  var date = dayjs().format("DDD/MMMM/D/YYYY");
   console.log(date);
-
-  // timeBlocks.each(function () {
-  //   var timeblock = $(this);
-
-  //   // check timeblock hour and if it is before current hour then add "past" class to the timebock div
-
-  //   var hour = timeBlock.attr("id").split("-")[1];
-  //   var currentHour = dayjs().hour();
-
-  //   console.log(currentHour);
-  // });
-
-  // var btns = $("time-block utton");
-
-  // function storeEvent() {
-  //   console.log("store");
-  // }
 });
+
+// timeBlocks.each(function () {
+//   var timeblock = $(this);
+
+//   // check timeblock hour and if it is before current hour then add "past" class to the timebock div
+
+//   var hour = timeBlock.attr("id").split("-")[1];
+//   var currentHour = dayjs().hour();
+
+//   console.log(currentHour);
+// });
+
+// var btns = $("time-block utton");
+
+// function storeEvent() {
+//   console.log("store");
+// }
 
 // TODO: Add a listener for click events on the save button. This code should
 // use the id in the containing time-block as a key to save the user input in
